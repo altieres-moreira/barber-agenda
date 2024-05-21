@@ -20,7 +20,7 @@ export default function FormDialog(props) {
 
 
     const handleEditValues = () => {
-        axios.put(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/edit/`, {
+        axios.put(`https://barber-agenda-production.up.railway.app`, {
             id: editValues.id,
             nome: editValues.nome,
             email: editValues.email,
@@ -39,7 +39,7 @@ export default function FormDialog(props) {
     }
 
     const handleDeleteCliente = () => {
-        axios.delete(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/delete/${editValues.id}`)
+        axios.delete(`https://barber-agenda-production.up.railway.app/delete/${editValues.id}`)
     }
 
     const handleChangeValues = (value)=>{

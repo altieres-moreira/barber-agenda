@@ -6,7 +6,7 @@ import Card from "./components/card";
 
 function App() {
 
-    const baseUrl = "mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway"
+    const baseUrl = "https://barber-agenda-production.up.railway.app"
 
     const [values, setValues] = useState();
     const [cliente, setCliente] = useState();

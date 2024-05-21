@@ -15,7 +15,7 @@ const Card = (props) => {
     };
 
     const handleDeleteCliente = () => {
-        axios.delete(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/delete/${props.id}`);
+        axios.delete(`https://barber-agenda-production.up.railway.app/delete/${props.id}`);
     }
 
     return (

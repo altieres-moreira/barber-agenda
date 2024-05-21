@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const db = mysql.createPool({
-    host: "mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway",
+    host: "https://barber-agenda-production.up.railway.app",
     user: "root",
     password: "DVagYMycAxVfNckTahdeWRYDxLwGSzRL",
     database: "agendamento",
