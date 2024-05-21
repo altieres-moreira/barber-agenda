@@ -6,7 +6,7 @@ import Card from "./components/card";
 
 function App() {
 
-    const baseUrl = "roundhouse.proxy.rlwy.net:39003"
+    const baseUrl = "http://localhost:3001"
 
     const [values, setValues] = useState();
     const [cliente, setCliente] = useState();

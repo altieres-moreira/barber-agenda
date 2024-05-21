@@ -20,7 +20,7 @@ export default function FormDialog(props) {
 
 
     const handleEditValues = () => {
-        axios.put(`roundhouse.proxy.rlwy.net:39003`, {
+        axios.put(`http://localhost:3001/edit/`, {
             id: editValues.id,
             nome: editValues.nome,
             email: editValues.email,
@@ -39,7 +39,7 @@ export default function FormDialog(props) {
     }
 
     const handleDeleteCliente = () => {
-        axios.delete(`roundhouse.proxy.rlwy.net:39003/delete/${editValues.id}`)
+        axios.delete(`http://localhost:3001/delete/${editValues.id}`)
     }
 
     const handleChangeValues = (value)=>{

@@ -4,18 +4,11 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const db = mysql.createPool({
-    host: "roundhouse.proxy.rlwy.net:39003",
-    user: "root",
-    password: "DVagYMycAxVfNckTahdeWRYDxLwGSzRL",
-    database: "agendamento",
-});
-
-/*const db = mysql.createPool({
     host: "localhost",
     user: "root",
     password: "1234",
     database: "agendamento",
-}); */
+});
 
 server.use(express.json());
 server.use(cors());
@@ -79,6 +72,6 @@ server.delete("/delete/:index", (req,res) =>{
     db.query(sql, [index], (err,result) =>{err ? console.log(err) : res.send(result)})
 })
 
-server.listen(3306, () =>
-    console.log("Running in the port 3306")
+server.listen(3001, () =>
+    console.log("Running in the port 3001")
 );
