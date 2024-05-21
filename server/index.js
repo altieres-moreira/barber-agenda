@@ -3,15 +3,12 @@ const server = express();
 const mysql = require('mysql');
 const cors = require('cors');
 
-const db = mysql.createPool(
-    {        
-        host: DB_HOST = process.env.DB_HOST || 'localhost',
-        user: DB_USER = process.env.DB_USER || 'root',
-        password: DB_PASSWORD = process.env.DB_PASSWORD || '1234',
-        port: DB_PORT = process.env.DB_PORT || '3306',
-        database: DB_NAME = process.env.DB_NAME || 'agendamento',
-    }
-)
+const db = mysql.createPool({
+    host: "mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway",
+    user: "root",
+    password: "DVagYMycAxVfNckTahdeWRYDxLwGSzRL",
+    database: "agendamento",
+});
 
 /*const db = mysql.createPool({
     host: "localhost",

@@ -15,7 +15,7 @@ const Card = (props) => {
     };
 
     const handleDeleteCliente = () => {
-        axios.delete(`http://localhost:39003/delete/${props.id}`);
+        axios.delete(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/delete/${props.id}`);
     }
 
     return (

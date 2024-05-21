@@ -20,7 +20,7 @@ export default function FormDialog(props) {
 
 
     const handleEditValues = () => {
-        axios.put(`http://localhost:39003/edit/`, {
+        axios.put(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/edit/`, {
             id: editValues.id,
             nome: editValues.nome,
             email: editValues.email,
@@ -39,7 +39,7 @@ export default function FormDialog(props) {
     }
 
     const handleDeleteCliente = () => {
-        axios.delete(`http://localhost:39003/delete/${editValues.id}`)
+        axios.delete(`mysql://root:kpivZbloiGjqEqiAievdHVVxITuXxiHF@roundhouse.proxy.rlwy.net:39314/railway/delete/${editValues.id}`)
     }
 
     const handleChangeValues = (value)=>{
