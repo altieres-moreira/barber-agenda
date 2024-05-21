@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const db = mysql.createPool({
-    host: "https://barber-agenda-production.up.railway.app",
+    host: "roundhouse.proxy.rlwy.net:39003",
     user: "root",
     password: "DVagYMycAxVfNckTahdeWRYDxLwGSzRL",
     database: "agendamento",
@@ -79,6 +79,6 @@ server.delete("/delete/:index", (req,res) =>{
     db.query(sql, [index], (err,result) =>{err ? console.log(err) : res.send(result)})
 })
 
-server.listen(39003, () =>
-    console.log("Running in the port 39003")
+server.listen(3306, () =>
+    console.log("Running in the port 3306")
 );
