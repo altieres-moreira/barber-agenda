@@ -15,7 +15,7 @@ const Card = (props) => {
     };
 
     const handleDeleteCliente = () => {
-        axios.delete(`http://localhost:3001/delete/${props.id}`);
+        axios.delete(`https://barber-agenda-production.up.railway.app/delete/${props.id}`);
     }
 
     return (

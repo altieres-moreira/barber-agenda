@@ -20,7 +20,7 @@ export default function FormDialog(props) {
 
 
     const handleEditValues = () => {
-        axios.put(`http://localhost:3001/edit/`, {
+        axios.put(`https://barber-agenda-production.up.railway.app/edit/`, {
             id: editValues.id,
             nome: editValues.nome,
             email: editValues.email,
@@ -39,7 +39,7 @@ export default function FormDialog(props) {
     }
 
     const handleDeleteCliente = () => {
-        axios.delete(`http://localhost:3001/delete/${editValues.id}`)
+        axios.delete(`https://barber-agenda-production.up.railway.app/delete/${editValues.id}`)
     }
 
     const handleChangeValues = (value)=>{
