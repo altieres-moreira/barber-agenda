@@ -4,10 +4,11 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const db = mysql.createPool({
-    host: "localhost",
+    url: "mysql://root:cCoyCabAFYmEOrRMwoJinmLGzRRxnYPq@monorail.proxy.rlwy.net:16515/railway",
+    host: "monorail.proxy.rlwy.net",
     user: "root",
-    password: "1234",
-    database: "agendamento",
+    password: "cCoyCabAFYmEOrRMwoJinmLGzRRxnYPq",
+    database: "railway",
 });
 
 server.use(express.json());
